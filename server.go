@@ -92,7 +92,7 @@ func main() {
 	fmt.Println("Starting server...")
 
 	ctx, _ := context.WithTimeout(context.Background(), 10*time.Second)
-	client, _ = mongo.NewClient(options.Client().ApplyURI("{Yout MongoDB URI}"))
+	client, _ = mongo.NewClient(options.Client().ApplyURI("{Your MongoDB URI}"))
 	_ = client.Connect(ctx)
 
 	router := chi.NewRouter()
